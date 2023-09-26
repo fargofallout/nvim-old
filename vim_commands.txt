@@ -7,10 +7,10 @@ d^ - delete to the beginning of the line
 dd - delete entire line
 d2w - delete from cursor to end of word and entire next word (number repeats the preceeding action)
 di' - delete from current ' to next, without deleting ' - works if you're before the scope, but not after
-da" - delete from current " to next, including the "
+da" - delete from current " to next, including the " (these work for parens, brackets, etc. as well)
 
 mike is "super not cool" and such
-mike (vacha) is bad at neovim
+mike (vacha) is bad at neovim, and I need some <text> that is in {various sorts of brackets} and whatnot
 
 ce - delete remainder of word and go into insert mode (cw seems to behave exactly the same)
 caw - delete entire word and go into insert mode (note that cae does not do anything)

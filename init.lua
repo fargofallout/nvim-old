@@ -7,8 +7,8 @@ vim.opt.relativenumber = true
 vim.opt.ic = true
 -- nnoremap <C-R> :sp <CR> :term python % <CR>
 
---larger cursor?
-vim.opt.guicursor = ""
+--larger cursor? - I may have done that incorrectly because it just makes the normal and insert cursors look the same
+--vim.opt.guicursor = ""
 
 -- four character tabs
 vim.opt.tabstop = 4
