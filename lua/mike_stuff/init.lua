@@ -11,7 +11,11 @@ require("lazy").setup({{
    end
    },
 
+--sublime text theme
 {"polirritmico/monokai-nightasty.nvim", lazy=false, priority=1000,},
+
+--harpoon
+{"ThePrimeagen/harpoon"},
 
 --lsp-zero setup
 {"williamboman/mason.nvim"},
