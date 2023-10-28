@@ -26,6 +26,14 @@ require("lazy").setup({{
 {'hrsh7th/nvim-cmp'},
 {'L3MON4D3/LuaSnip'},
 
+--comment.nvim https://github.com/numToStr/Comment.nvim
+{
+    'numToStr/Comment.nvim',
+    opts = {
+        -- options here (maybe this should go in its own file?
+    },
+    lazy = false,
+}
 
  }})
 

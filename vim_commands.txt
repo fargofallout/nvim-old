@@ -1,3 +1,35 @@
+custom keybinds from installed packages
+<leader>pf - find files in project (project files)
+<leader>ps - search in projects (project search)
+<leader>* - search project for string under cursor
+<leader>pg - grep across project (project grep) - not sure if there's a significant difference between this and ps
+<leader>py - symbols in current project (only works if lsp is utilized)
+<leader>dy - symbols in current document (only works if lsp is utilized)
+<leader>a - add file to harpoon
+<C-e> - open harpoon menu
+<C-j> - navigate to harpoon 1
+<C-k> - navigate to harpoon 2
+<C-l> - navigate to harpoon 3
+<C-;> - navigate to harpoon 4
+<C-a> - previous harpoon file
+<C-s> - next harpoon file
+
+gd - goto definition of the function under cursor
+gr - lists all references of function under cursor
+
+<leader>pv - neovim project view
+
+comments
+gcc - comment current line
+[number]gcc - comments that many lines down
+gc[number][motion] - comments that many lines in that direction in addition to single line
+ - e.g., 4kgc would comment the current line and four extra lines above the current line
+gco - add comment to line below, move to line, and enter insert mode
+gcO - same as above, but to line above
+gcA - put comment at end of line and enter insert mode
+gc [visual mode] - comment selected line(s)
+-- in general, comments follow vim standards for movement, although they may not be supported by the language
+
 deletions (note these deletions are more like cuts):
 dw - delete to end of current word, including trailing space
 daw - deletes the whole word (note that dae does not work)
@@ -40,6 +72,8 @@ o - insert a blank line below the current line and go into insert mode
 O - same as above, but go above current line
 CTRL+D - while in normal mode, if :letter has been typed, will show commands that start with that letter
 > or < - increase or decrease indent while in visual mode
+q: - open terminal history
+CTRL+r + + (control r and then plus or asterisk): paste from external clipboard to terminal
 
 :w filename - write file to new file named filename
 :r filename - read contents of a file and place them at the cursor
