@@ -16,6 +16,7 @@ custom keybinds from installed packages
 
 gd - goto definition of the function under cursor
 gr - lists all references of function under cursor
+K - open information about word under cursor (hover menu)
 
 <leader>pv - neovim project view
 
@@ -30,6 +31,12 @@ gcA - put comment at end of line and enter insert mode
 gc [visual mode] - comment selected line(s)
 -- in general, comments follow vim standards for movement, although they may not be supported by the language
 
+netrw mode
+% - new file
+d - new directory
+mb - bookmark on current directory
+gb - go back to previous bookmark
+
 deletions (note these deletions are more like cuts):
 dw - delete to end of current word, including trailing space
 daw - deletes the whole word (note that dae does not work)
@@ -41,8 +48,6 @@ d2w - delete from cursor to end of word and entire next word (number repeats the
 di' - delete from current ' to next, without deleting ' - works if you're before the scope, but not after
 da" - delete from current " to next, including the " (these work for parens, brackets, etc. as well)
 
-mike is "super not cool" and such
-mike (vacha) is bad at neovim, and I need some <text> that is in {various sorts of brackets} and whatnot
 
 ce - delete remainder of word and go into insert mode (cw seems to behave exactly the same)
 caw - delete entire word and go into insert mode (note that cae does not do anything)
@@ -139,6 +144,8 @@ CTRL+i - navigate forward in cursor positions
 	l - perform current substitution and quit (last?)
 	CTRL+E - move down the page (works outside of search context)
 	CTRL+Y - move up the page (works outside of search)
+
+:'<,>s/\v%V - not sure what that first part does (happens automatically when in visual mode), but this searches just text selected via visual mode and treats all characters as special other than letters and whatnot (so no need to escape them)
 
 :set - set options, such as whether to ignore case when searching
 :set inv[option] - set the inverse of the option

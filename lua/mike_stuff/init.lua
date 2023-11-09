@@ -24,7 +24,9 @@ require("lazy").setup({{
 {'neovim/nvim-lspconfig'},
 {'hrsh7th/cmp-nvim-lsp'},
 {'hrsh7th/nvim-cmp'},
-{'L3MON4D3/LuaSnip'},
+{'L3MON4D3/LuaSnip', 
+dependencies = {'rafamadriz/friendly-snippets', },
+},
 
 --comment.nvim https://github.com/numToStr/Comment.nvim
 {
